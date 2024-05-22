@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Drawing App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <canvas id="canvas"></canvas>
+        <div class="toolbar">
+            <a href="https">
+                <img src="https://pbs.twimg.com/profile_images/1791030059190415360/yh1cU9sJ_400x400.jpg" alt="Logo">
+            </a>
+            <input type="file" id="file-input" accept="image/*">
+            <input type="file" id="brush-input" accept="image/*">
+            <input type="color" id="color-picker" value="#000000">
+            <input type="range" id="pen-size" min="1" max="20" value="5">
+            <input type="range" id="brush-size-slider" min="1" max="100" value="20"> <!-- Brush size slider -->
+            <button id="eraser-btn">Eraser</button>
+            <button id="pen-btn">Pen</button>
+            <label for="brush-toggle">Enable Brush:</label>
+            <input type="checkbox" id="brush-toggle" checked>
+            <label for="x-slider">X Coordinate:</label>
+            <input type="range" id="x-slider" min="0" max="100" value="0">
+            <label for="y-slider">Y Coordinate:</label>
+            <input type="range" id="y-slider" min="0" max="100" value="0">
+            <label for="width-slider">Width:</label>
+            <input type="range" id="width-slider" min="10" max="500" value="100">
+            <label for="height-slider">Height:</label>
+            <input type="range" id="height-slider" min="10" max="500" value="100">
+            <label for="bg-color-picker">Canvas Background Color:</label>
+            <input type="color" id="bg-color-picker" value="#FFFFFF">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
